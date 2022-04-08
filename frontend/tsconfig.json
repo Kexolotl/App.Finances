@@ -1,0 +1,47 @@
+{
+	"compileOnSave": false,
+	"compilerOptions": {
+		"target": "es5",
+		"lib": [
+			"es2017",
+			"dom",
+			"dom.iterable",
+			"scripthost"
+		],
+		"declaration": false,
+		"resolveJsonModule": true,
+		"outDir": "./dist",
+		"removeComments": true,
+		"esModuleInterop": true,
+		"module": "esNext",
+		"strict": true,
+		"noImplicitAny": true,
+		"noImplicitThis": true,
+		"jsx": "preserve",
+		"moduleResolution": "node",
+		"experimentalDecorators": true,
+		"emitDecoratorMetadata": true,
+		"allowSyntheticDefaultImports": true,
+		"sourceMap": true,
+		"strictPropertyInitialization": false,
+		"noUnusedLocals": true,
+		"noUnusedParameters": true,
+		"baseUrl": ".",
+		"types": [
+			"node",
+			"jest"
+		],
+		"paths": {
+			"@/*": [
+				"src/*"
+			]
+		}
+	},
+	"include": [
+		"src/**/*.ts",
+		"src/**/*.vue"
+	],
+	"exclude": [
+		"node_modules"
+	]
+}

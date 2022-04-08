@@ -1,0 +1,18 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <LangVersion>latest</LangVersion>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Finances\Domain.Finances.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Common.JsonDatabase" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Common.JsonDatabase" Version="1.0.1" />
+  </ItemGroup>
+</Project>

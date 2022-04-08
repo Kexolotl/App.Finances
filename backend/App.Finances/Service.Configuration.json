@@ -1,0 +1,6 @@
+﻿{
+  "ServiceName": "App.Finances",
+  "Logging": "Debug",
+  "BaseDirectory": "../../ApplicationData/App.Finances",
+  "StorageFolder": "JsonData"
+}

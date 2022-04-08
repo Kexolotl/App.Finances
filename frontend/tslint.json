@@ -1,0 +1,108 @@
+{
+  "defaultSeverity": "warning",
+  "extends": [
+    "tslint:recommended"
+  ],
+  "rules": {
+    "align": [
+      true,
+      "statements"
+    ],
+    "class-name": true,
+    "max-classes-per-file": false,
+    "quotemark": [
+      true,
+      "double"
+    ],
+    "one-line": [
+      true,
+      "check-open-brace",
+      "check-whitespace"
+    ],
+    "indent": [
+      true,
+      "tab",
+      4
+    ],
+    "interface-name": [
+      false
+    ],
+    "ordered-imports": [
+      false
+    ],
+    "object-literal-sort-keys": [
+      false
+    ],
+    "no-consecutive-blank-lines": [
+      false
+    ],
+    "no-console": [
+      false
+    ],
+    "member-access": [
+      true,
+      "check-accessor"
+    ],
+    "trailing-comma": [
+      true,
+      {
+        "multiline": "never",
+        "singleline": "never"
+      }
+    ],
+    "triple-equals": [
+      true,
+      "allow-undefined-check"
+    ],
+    "typedef": [
+      true,
+      "call-signature",
+      "parameter",
+      "property-declaration",
+      "member-variable-declaration"
+    ],
+    "import-spacing": [
+      true
+    ],
+    "variable-name": [
+      true,
+      "allow-leading-underscore"
+    ],
+    "whitespace": [
+      true,
+      "check-branch",
+      "check-decl",
+      "check-operator",
+      "check-module",
+      "check-separator",
+      "check-type",
+      "check-rest-spread",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "max-line-length": [
+      true,
+      250
+    ],
+    "no-angle-bracket-type-assertion": false,
+    "no-bitwise": false,
+    "only-arrow-functions": [
+      false,
+      "allow-declarations",
+      "allow-named-functions"
+    ],
+    "vue/valid-v-slot": ["error", {
+      "allowModifiers": false
+    }]
+  },
+  "compilerOptions": {
+    "noUnusedLocals": true,
+    "noUnusedParameters": true
+  },
+  "linterOptions": {
+    "exclude": [
+      "**/*.spec.js",
+      "**/node_modules/**/*"
+    ]
+  }
+}

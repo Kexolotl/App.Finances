@@ -1,0 +1,31 @@
+[Category]
+Id: Guid
+Name: String
+ParentId: Guid
+
+[MoneyActivity]
+Id: Guid
+CategoryId: Guid
+BusinessId: Guid
+Amount: Decimal
+TypeOfPayment: Enum (Cash / CreditCard / EC-Card)
+Type: Enum (Income / Saving / Expenditure)
+CashActivityDate: DateTime
+Warranty: VO (purchaseDate, length)
+ReceiptStored: bool
+
+[StandingOrder]
+Id: Guid
+CategoryId: Guid
+Amount: Decimal
+DateOfExecution: Date
+Interval: Enum (Daily / Weekly / Monthly / Yearly)
+
+[Report]
+Id: Guid
+Name: String
+Calculation: List<Calculation(Amount, CategoryId)>
+
+[Business]
+Id: Guid
+Name: String

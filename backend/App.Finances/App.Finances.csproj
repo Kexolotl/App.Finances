@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp5.0</TargetFramework>
+    <AspNetCoreHostingModel>InProcess</AspNetCoreHostingModel>
+    <LangVersion>latest</LangVersion>
+    <UserSecretsId>9d37785e-27d1-49e4-bee7-2537bdd91c0e</UserSecretsId>
+    <ApplicationIcon />
+    <OutputType>Exe</OutputType>
+    <StartupObject>MyFinances.Program</StartupObject>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(RunConfiguration)' == 'MyFinances' " />
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Hosting.WindowsServices" Version="5.0.6" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="5.0.6" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Console" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Logging.EventSource" Version="5.0.1" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.2" />
+    <PackageReference Include="Common.TaskScheduler" Version="1.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Finances.BusinessAggregate\Domain.Finances.BusinessAggregate.csproj" />
+    <ProjectReference Include="..\Domain.Finances.CategoryAggregate\Domain.Finances.CategoryAggregate.csproj" />
+    <ProjectReference Include="..\Domain.Finances.MoneyActivityAggregate\Domain.Finances.MoneyActivityAggregate.csproj" />
+    <ProjectReference Include="..\Domain.Finances.StandingOrderAggregate\Domain.Finances.StandingOrderAggregate.csproj" />
+    <ProjectReference Include="..\Domain.Finances\Domain.Finances.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Remove="Common.TaskScheduler" />
+  </ItemGroup>
+</Project>

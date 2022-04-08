@@ -1,0 +1,8 @@
+server {
+    listen  28000;
+    charset utf-8;
+    root    /home/pi/publishedSPAs/MyFinances;
+    index   index.html index.htm;
+    error_log  /var/log/nginx/my-finances-error.log;
+    access_log /var/log/nginx/my-finances-access.log;
+}
